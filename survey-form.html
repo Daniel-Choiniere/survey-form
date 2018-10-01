@@ -1,0 +1,59 @@
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
+
+
+<style>
+
+  #description {
+    font-size: 15px;
+  }
+  
+  #survey-form {
+    font-size: 12px;
+  }
+  
+</style>
+
+
+<h1 id="title">Survey Form<h1>
+  
+  <p id="description">Please answer some questions about your coding experience!</p>
+  
+  <form id="survey-form">
+
+    <label id="name-label">Name</label><input id="name" type="text" name="firstname" required placeholder="Enter your name">
+    <br>
+    <label id="email-label">E-mail</label><input id="email" type="email" name="email" required placeholder="Enter your E-mail">
+    <br>
+    <label id="number-label">Age</label><input id="number" type="number" name="age" min="1" max="100" placeholder="Age">
+    </br>
+    </br>
+    <input type="radio" name="gender" value="male"> Male<br>
+    <input type="radio" name="gender" value="female"> Female<br>
+    <input type="radio" name="gender" value="other"> Prefer not to answer  
+    </br>
+    </br>
+
+  <h3>What was the major obstacle to overcome when learning to code?</h3>
+     <select id="dropdown" name="reasons">
+      <option value="learning">Learning Curve</option>
+      <option value="time">Not enough free time</option>
+      <option value="financial">Financial reasons</option>
+      <option value="community">Lack of community</option>
+    </select>
+    </br>
+    </br>
+      
+  <h3>Employment status</h3>
+    <input type="checkbox" name="employment" value="employed">Employed<br>
+    <input type="checkbox" name="employment" value="unemployed">Unemployed<br>
+    <input type="checkbox" name="employment" value="underemployed">Underemployed<br>
+    <input type="checkbox" name="employment" value="self">Self employed<br>
+    <input type="checkbox" name="employment" value="student">Student<br>
+<h3>Any comments or suggestions for upcoming code newbies?</h3>
+     <textarea name="comment" form="usrform">Enter text here...</textarea>
+</br>
+</br>
+    <input id="submit" type="submit" value="Submit">
+
+  </form>
